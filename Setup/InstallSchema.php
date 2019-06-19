@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Costa\Owenwork\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
@@ -36,7 +35,7 @@ class InstallSchema implements InstallSchemaInterface
                 'Drink Price'
             )->addColumn(
                 'drink_description',
-                Table::TYPE_DECIMAL,
+                Table::TYPE_TEXT,
                 null,
                 ['nullable' => true],
                 'Drink Description'
@@ -49,5 +48,4 @@ class InstallSchema implements InstallSchemaInterface
         $setup->getConnection()->createTable($table);
         $setup->endSetup();
     }
-
 }
