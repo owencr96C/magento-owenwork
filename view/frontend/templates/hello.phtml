@@ -2,6 +2,5 @@
 /** @var \Costa\Owenwork\Block\Hello $block */
 ?>
 <?php foreach ($block->getItems() as $drink): ?>
-<p>Hello!</p>
-<p><?php echo $drink->getData('drink_name'); ?>: <?php echo $drink->getData('drink_description')?></p>
+<p><?php echo $drink->getData('drink_name'); ?>: <?php echo $drink->getDrinkDescription()?></p>
 <?php endforeach; ?>
